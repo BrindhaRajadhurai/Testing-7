@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-900 text-gray-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate for Madhumitra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        font-family: "Inter", sans-serif;
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuBtn = document.getElementById("menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+        menuBtn.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
+      });
+    </script>
+  </head>
+  <body class="bg-gray-900 text-gray-100">
+    <!-- Header -->
+    <header
+      class="fixed top-0 left-0 w-full bg-gray-900 z-50 shadow border-b border-gray-800"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <div class="flex items-center space-x-3">
+          <img
+            src="Kovai Children Heart Center File Design - 001 (2).jpg"
+            alt="Logo"
+            width="50"
+            height="50"
+          />
+          <span class="text-xl font-bold">KOVAI CHILDREN HEART CENTRE</span>
+        </div>
+        <nav class="hidden md:flex space-x-6">
+          <a href="index.html" class="hover:text-red-400">Home</a>
+          <a href="who.html" class="hover:text-red-400">Who We Are</a>
+          <a href="what.html" class="hover:text-red-400">What We Do</a>
+          <a href="services.html" class="hover:text-red-400">Services</a>
+          <a href="donate.html" class="text-red-400 font-semibold">Donate</a>
+          <a href="contact.html" class="hover:text-red-400">Contact</a>
+        </nav>
+        <button class="md:hidden text-2xl" id="menu-button">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="md:hidden px-4 mt-2 hidden space-y-2 pb-4">
+        <a href="index.html" class="block text-gray-300">Home</a>
+        <a href="who.html" class="block text-gray-300">Who We Are</a>
+        <a href="what.html" class="block text-gray-300">What We Do</a>
+        <a href="services.html" class="block text-gray-300">Services</a>
+        <a href="donate.html" class="block text-red-400 font-semibold"
+          >Donate</a
+        >
+        <a href="contact.html" class="block text-gray-300">Contact</a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-8 text-center">
+      <h1 class="text-4xl font-bold text-red-500 mb-2">
+        Services Provided for Madhumitra
+      </h1>
+      <p class="text-gray-400 text-lg max-w-3xl mx-auto">
+        Madhumitra, a 10-year-old child diagnosed with acute renal failure, was
+        supported through our specialized services. Our team facilitated
+        essential diagnostic tests and medical interventions under pediatric
+        care to aid in her recovery.
+      </p>
+    </section>
+
+    <!-- Main Donation Box -->
+    <main class="pb-12 px-4">
+      <section <!-- Services Provided Info -->
+        <div class="mt-10 bg-gray-700/50 p-6 rounded-xl">
+          <h3 class="text-xl font-bold text-red-400 mb-3">
+            Medical Services Provided to Madhumitra
+          </h3>
+
+          <p class="text-gray-300 leading-relaxed">
+            With your generous support, Madhumitra received critical pediatric
+            care through our services such as:
+          </p>
+          <ul class="list-disc list-inside text-gray-300 mt-4 space-y-2">
+            <li>
+              Advanced diagnostic tests including ADAMTS13 and Whole Exome
+              Sequencing
+            </li>
+            <li>Specialist consultations and follow-up care</li>
+            <li>Dialysis support for acute renal failure</li>
+            <li>Coordination with Lal Path Labs for reduced testing costs</li>
+          </ul>
+          <p class="mt-4 text-gray-400 italic">
+            These services are part of what we regularly offer to children in
+            need. Your donation helps us continue this mission.
+          </p>
+        </div>
+
+        <!-- Right: Form -->
+        <div>
+          <h2 class="text-xl font-bold text-center text-yellow-400 mb-6">
+            Be the Reason a Child Survives — Donate Now
+          </h2>
+
+          <form class="space-y-4">
+            <input
+              type="text"
+              placeholder="Full Name"
+              class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 text-white"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 text-white"
+            />
+            <input
+              type="number"
+              placeholder="Amount (INR)"
+              class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 text-white"
+            />
+
+            <select
+              class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 text-white"
+            >
+              <option value="">Select Payment Method</option>
+              <option value="upi">UPI</option>
+              <option value="gpay">Google Pay</option>
+              <option value="phonepe">PhonePe</option>
+              <option value="netbanking">Net Banking</option>
+              <option value="card">Debit/Credit Card</option>
+            </select>
+            <button
+              type="submit"
+              class="w-full bg-red-500 hover:bg-red-600 text-white font-semibold py-3 rounded-lg transition"
+            >
+              Proceed to Pay
+            </button>
+          </form>
+
+          <div class="mt-10 text-center border-t border-gray-600 pt-6">
+            <h3 class="text-xl font-bold text-yellow-400 mb-2">
+              Help More Children Like Madhumitra
+            </h3>
+            <p class="text-gray-400 mb-4">
+              Not just Madhumitra — many other children also need your support.
+            </p>
+            <a
+              href="donate.html"
+              class="inline-block bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold px-6 py-3 rounded-lg transition"
+              >Donate for Others</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 border-t border-gray-700">
+      <div class="container mx-auto px-4 py-12">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div>
+            <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                <a href="who.html" class="hover:text-red-400">About Us</a>
+              </li>
+              <li>
+                <a href="services.html" class="hover:text-red-400">Services</a>
+              </li>
+              <li><a href="#" class="hover:text-red-400">Cardiology</a></li>
+              <li>
+                <a href="donate.html" class="hover:text-red-400">Support Us</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">Working Hours</h4>
+            <ul class="text-gray-400">
+              <li>Mon - Fri: 9:00 AM - 6:00 PM</li>
+              <li>Saturday: 9:00 AM - 2:00 PM</li>
+              <li>Sunday: Closed</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">Connect With Us</h4>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-red-400"
+                ><i class="fab fa-facebook text-2xl"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-red-400"
+                ><i class="fab fa-twitter text-2xl"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-red-400"
+                ><i class="fab fa-instagram text-2xl"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-red-400"
+                ><i class="fab fa-linkedin text-2xl"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mt-12 pt-8 border-t border-gray-700 text-center text-gray-400"
+        >
+          <p>&copy; 2025 Kovai Children Heart Centre. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
